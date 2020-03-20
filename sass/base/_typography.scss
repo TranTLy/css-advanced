@@ -6,20 +6,37 @@
   transform: translate(-50%, -50%);
   backface-visibility: hidden;
   text-align: center;
-  .text-primary {
-    &--main {
-      font-size: 7rem;
-      font-weight: 600;
-      letter-spacing: 2.2rem;
-      text-transform: uppercase;
-      animation: moveFromLeft 2s;
-    }
+}
+.heading-primary {
+  &--main {
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: 2.2rem;
+    text-transform: uppercase;
+    animation: moveFromLeft 2s;
+  }
 
-    &--sub {
-      font-size: 4rem;
-      font-weight: 400;
-      letter-spacing: 0.95rem;
-      animation: moveFromRight 2s;
-    }
+  &--sub {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.95rem;
+    animation: moveFromRight 2s;
+  }
+}
+
+.heading-secondary {
+  color: $color-grey-1;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .3rem;
+  transition: all .2s;
+  &:hover {
+    transform: skewY(0) skewX(-20deg) scale(1.1);
+    text-shadow: .3rem .6rem .9rem rgba(0, 0, 0, 0.24);
   }
 }
