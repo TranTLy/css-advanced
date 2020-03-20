@@ -1,0 +1,22 @@
+// https://stackoverflow.com/questions/30826361/files-starting-with-underscore-at-the-beginning-what-do-they-mean
+// According to me the only reason to use underscore before the name of the partial is that
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.*"
+// Any SASS files not beginning with an underscore will be rendered on their own, which will fail if they are using variables or mixins defined elsewhere.
+// In the end I have concluded that the underscore is just used to clarify that it is a partial file. We can also use a partial file without using an underscore as prefix.
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  /* default font-size: 16px -> 62.5% * 16px = 10px */
+  /* 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 3rem;
+  box-sizing: border-box;
+}

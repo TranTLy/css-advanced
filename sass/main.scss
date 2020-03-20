@@ -1,0 +1,18 @@
+@import 'base/animation';
+@import 'base/utilities';
+@import 'base/base';
+@import 'base/typography';
+@import 'abstract/variables';
+
+@import 'components/button';
+@import 'layouts/header';
+@import 'pages/home';
+//npm run compile:sass
+
+
+.logo {
+  width: 6.5rem;
+  margin: 1rem;
+}
+
+
