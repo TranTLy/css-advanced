@@ -41,7 +41,7 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-.heading-primary {
+.text-box {
   color: #fff;
   position: absolute;
   left: 50%;
@@ -49,13 +49,13 @@ body {
   transform: translate(-50%, -50%);
   backface-visibility: hidden;
   text-align: center; }
-  .heading-primary--main {
+  .text-box .text-primary--main {
     font-size: 7rem;
     font-weight: 600;
     letter-spacing: 2.2rem;
     text-transform: uppercase;
     animation: moveFromLeft 2s; }
-  .heading-primary--sub {
+  .text-box .text-primary--sub {
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 0.95rem;
@@ -110,7 +110,7 @@ body {
   animation-fill-mode: backwards; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(18, 175, 75, 0.6), rgba(217, 255, 204, 0.9)), url("./img/img1.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(217, 255, 231, 0.4), rgba(217, 255, 204, 0.8)), url("../img/img1.jpeg");
   height: 95vh;
   background-size: cover;
   background-position: center;
@@ -120,7 +120,6 @@ body {
     width: 7rem;
     height: 7rem;
     position: absolute; }
-
-.logo {
-  width: 6.5rem;
-  margin: 1rem; }
+    .header__logo-box .logo {
+      width: 6.5rem;
+      margin: 1rem; }
