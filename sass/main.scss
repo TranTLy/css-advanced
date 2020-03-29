@@ -4,12 +4,23 @@
 @import 'base/base';
 @import 'base/typography';
 
+@import 'components/composition';
 @import 'components/button';
+
 @import 'layouts/header';
 @import 'pages/home';
 //npm run compile:sass
+// run when change: live-server
+
+// https://css-tricks.com/snippets/html/glyphs/
 
 
 
+.row {
+    display: flex;
+    justify-content: space-around;
+}
 
-
+.col-1-of-2 {
+    flex: 1;
+}
