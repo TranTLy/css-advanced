@@ -189,7 +189,9 @@ body {
 
 .feature-box {
   text-align: center;
-  background-color: rbga(#fff, 0.9);
+  margin: auto 2rem;
+  padding: 5rem 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px; }
 
