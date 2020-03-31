@@ -1,14 +1,25 @@
 .feature-box {
+    flex: 1;
     text-align: center;
     margin: auto 2rem;
-    padding: 5rem 20px;
+    padding: 5rem 3rem;
     background-color: rgba($color-white, 0.8);
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
     border-radius: 2px;
+    transition: all .2s;
     &__icon {
-
+        font-size: 5rem;
+        margin-bottom: 40px;
+        font-style: bold;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     &__text {   
 
+    }
+    &:hover{
+        transform: scale(1.2);
     }
 }

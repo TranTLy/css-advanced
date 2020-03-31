@@ -6,13 +6,19 @@
 }
 
 .section-feature {
-    padding: 15rem 0;
+    padding: 15rem 5rem;
+    display: flex;
+    justify-content: center;
     // note
     background-image: linear-gradient(
         to right bottom,
-        rgba(217, 255, 231, 0.4),
-        rgba(217, 255, 204, 0.8)
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-dark, .9)
       ),
       url("../img/img1.jpeg");
       background-size: cover; // note
+      transform: skewY(-7deg);
+      & > * {
+          transform: skewY(7deg);
+      }
 }
