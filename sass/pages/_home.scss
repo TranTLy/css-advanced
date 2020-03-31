@@ -1,14 +1,12 @@
 
 .section-about {
     background-color: $color-grey-1;
-    padding: 15rem 0;
-    margin-top: -20vh; // = 95 - 75vh (height header - heigh clip path)   
+    padding: 20rem 1rem 20rem 5rem;
+    margin-top: -18vh; // = 95 - 75vh (height header - heigh clip path)   
 }
 
 .section-feature {
     padding: 15rem 5rem;
-    display: flex;
-    justify-content: center;
     // note
     background-image: linear-gradient(
         to right bottom,
@@ -17,8 +15,9 @@
       ),
       url("../img/img1.jpeg");
       background-size: cover; // note
-      transform: skewY(-7deg);
+      transform: skewY(-7.5deg);
+      margin-top: -9rem;
       & > * {
-          transform: skewY(7deg);
+          transform: skewY(7.5deg) !important;
       }
 }

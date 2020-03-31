@@ -205,7 +205,7 @@ body {
     color: transparent;
     display: inline-block; }
   .feature-box:hover {
-    transform: scale(1.2); }
+    transform: translateY(-1.5rem) scale(1.1); }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(217, 255, 231, 0.4), rgba(217, 255, 204, 0.8)), url("../img/img1.jpeg");
@@ -224,18 +224,17 @@ body {
 
 .section-about {
   background-color: #f3f3f3;
-  padding: 15rem 0;
-  margin-top: -20vh; }
+  padding: 20rem 1rem 20rem 5rem;
+  margin-top: -18vh; }
 
 .section-feature {
   padding: 15rem 5rem;
-  display: flex;
-  justify-content: center;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.9)), url("../img/img1.jpeg");
   background-size: cover;
-  transform: skewY(-7deg); }
+  transform: skewY(-7.5deg);
+  margin-top: -9rem; }
   .section-feature > * {
-    transform: skewY(7deg); }
+    transform: skewY(7.5deg) !important; }
 
 .row {
   display: flex;
