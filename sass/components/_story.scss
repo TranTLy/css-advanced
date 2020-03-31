@@ -1,0 +1,16 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    &__shape{
+        $size: 10rem;
+        width: $size;
+        height: $size;
+        background-color: red;
+        float: left;
+        shape-outside: circle(50% at 50% 50%); // horizentally - vertically
+        -webkit-shape-outside: circle(50% at 50% 50%); // horizentally - vertically
+
+
+    }
+
+}

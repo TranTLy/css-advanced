@@ -126,6 +126,17 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+.story {
+  width: 75%;
+  margin: 0 auto; }
+  .story__shape {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
