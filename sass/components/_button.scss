@@ -44,6 +44,14 @@
       background-color: $color-white;
     }
   }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-white;
+    }
+  }
   
   &--animated {
     animation: moveFromBottom 2s ease-out 1s;
