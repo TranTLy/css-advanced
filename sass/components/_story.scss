@@ -1,16 +1,29 @@
 .story {
     width: 75%;
     margin: 0 auto;
+    background-color: #eee;
+    transform: skewX(-12deg);
+    padding: 3rem 2rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, .15);
+
     &__shape{
         $size: 10rem;
         width: $size;
         height: $size;
-        background-color: red;
         float: left;
         shape-outside: circle(50% at 50% 50%); // horizentally - vertically
         -webkit-shape-outside: circle(50% at 50% 50%); // horizentally - vertically
+        clip-path: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        transform: translateX(2rem) skewX(12deg);
+    }
+    &__img {
+        height: 100%;
+    }
 
-
+    &__text {
+        transform: skewX(12deg);
+        padding-left: 5rem;
     }
 
 }

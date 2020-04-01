@@ -128,14 +128,25 @@ body {
 
 .story {
   width: 75%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #eee;
+  transform: skewX(-12deg);
+  padding: 3rem 2rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15); }
   .story__shape {
     width: 10rem;
     height: 10rem;
-    background-color: red;
     float: left;
     shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%); }
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translateX(2rem) skewX(12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(12deg);
+    padding-left: 5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
