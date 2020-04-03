@@ -1,10 +1,12 @@
 .story {
     width: 75%;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: rgba( #eee, .8);
     transform: skewX(-12deg);
-    padding: 3rem 2rem;
-    box-shadow: 0 3rem 6rem rgba($color-black, .15);
+    padding: 3rem 4rem;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    margin: 10px auto 50px;
+    border-radius: 3px;
 
     &__shape{
         $size: 10rem;
@@ -15,15 +17,45 @@
         -webkit-shape-outside: circle(50% at 50% 50%); // horizentally - vertically
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-        transform: translateX(2rem) skewX(12deg);
+        transform: translateX(-2rem) skewX(12deg);
+        position: relative;
+        backface-visibility: hidden;
     }
     &__img {
         height: 100%;
+        transition: all .5s;
+        transform: translateX(-2rem) scale(1.2);
+        backface-visibility: hidden;
     }
 
     &__text {
         transform: skewX(12deg);
-        padding-left: 5rem;
+        // padding-left: 5rem;
     }
 
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden; // hide a little bit shark
+    }
+
+    &:hover &__caption{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    &:hover &__img {
+        transform:  translateX(-2rem) scale(1);
+        opacity: 1;
+        filter: blur(3px) brightness(80%); // note
+        // filter: hue-rotate(-51deg);
+    }
+    
 }
