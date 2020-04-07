@@ -454,6 +454,44 @@ body {
       width: 6.5rem;
       margin: 1rem; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 10rem;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    margin-bottom: 5rem; }
+    .footer__logo-box img {
+      width: 100px; }
+  .footer__navigation {
+    text-align: center;
+    flex: 1;
+    display: inline-block; }
+  .footer__list {
+    border-top: 1px solid #777;
+    padding-top: 1rem;
+    display: inline-block;
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    display: inline-block; }
+    .footer__link:link, .footer__link:visited {
+      text-decoration: none;
+      color: #777;
+      text-transform: uppercase;
+      padding: .5rem;
+      transition: all .2s; }
+    .footer__link:hover, .footer__link:active {
+      color: #55c57a;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+      transform: rotate(5deg) scale(1.2); }
+  .footer__copy-right {
+    flex: 1;
+    border-top: 1px solid #777;
+    padding-top: 1rem; }
+
 .section-about {
   background-color: #f3f3f3;
   padding: 20rem 1rem 20rem 5rem;
